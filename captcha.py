@@ -7,7 +7,7 @@ from PIL import Image, ImageFont, ImageDraw
 class captcha(object):
     def __init__(self, text='captcha',
         width=0,height=0,fontsize=24,border=10):
-        self.font = ImageFont.truetype(filename='./font.ttf', size=fontsize)
+        self.font = ImageFont.truetype(font='./font.ttf', size=fontsize)
         self.text = text
         self.width = width
         self.height = height
